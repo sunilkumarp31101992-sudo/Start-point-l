@@ -90,3 +90,6 @@ a.card:hover{
 .add-form button{
   margin-top: 10px;
 }
+.hide{
+  display: none;
+  }
