@@ -70,3 +70,23 @@ a.card:hover{
   margin:8px 0;
   padding:8px;
 }
+.add-form{
+  background: var(--card);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.add-form input,
+.add-form select{
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-form button{
+  margin-top: 10px;
+}
