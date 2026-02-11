@@ -33,19 +33,17 @@ section{ padding:20px; }
 footer{
   background:var(--header); color:#aaa; text-align:center; padding:15px; font-size:13px;
 }
-.card{
-  text-decoration: none;
-  color: inherit;
+a.card{
+  text-decoration: none !important;
+  color: inherit !important;
   display: block;
 }
 
-.card p{
-  margin: 8px 0 0;
-  font-weight: bold;
+a.card:visited{
+  color: inherit !important;
 }
 
-.card img{
-  width:60px;
-  height:60px;
-  object-fit:contain;
-  }
+a.card:hover{
+  text-decoration: none !important;
+  color: inherit !important;
+}
