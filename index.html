@@ -26,73 +26,73 @@
   <button onclick="filterCat('skills')">Skills</button>
   <button onclick="filterCat('finance')">Finance</button>
 </div>
-<button onclick="toggleForm()">➕ Add Company</button>
-  <div class="add-form">
-  <h3>Add Company</h3>
-  
-  <input type="text" id="companyName" placeholder="Company Name">
-  
-  <input type="text" id="companyUrl" placeholder="Company Website URL">
-  
-  <input type="text" id="companyLogo" placeholder="Logo Image URL">
-  
-  <select id="companyCategory">
-    <option value="jobs">Jobs</option>
-    <option value="learning">Learning</option>
-    <option value="skills">Skills</option>
-    <option value="finance">Finance</option>
-  </select>
-  
-  <button onclick="addCompany()">Add</button>
-</div>
+
 <section>
-<div class="grid" id="cards">
 
-  <!-- JOBS -->
-  <a href="https://www.linkedin.com/jobs" target="_blank" class="card jobs">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-    <p>LinkedIn Jobs</p>
-  </a>
+  <!-- ADD COMPANY FORM (Hidden by default) -->
+  <div class="add-form hide" id="companyForm">
 
-  <a href="https://www.indeed.com" target="_blank" class="card jobs">
-    <img
-     src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Indeed">
-    <p>Indeed</p>
-  </a>
+    <h2>Add Company</h2>
 
-  <!-- LEARNING -->
-  <a href="https://www.freecodecamp.org" target="_blank" class="card learning">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="FreeCodeCamp">
-    <p>FreeCodeCamp</p>
-  </a>
+    <input type="text" id="companyName" placeholder="Company Name">
+    <input type="text" id="companyURL" placeholder="Company Website URL">
+    <input type="text" id="companyLogo" placeholder="Logo Image URL">
 
-  <a href="https://www.khanacademy.org" target="_blank" class="card learning">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/732/732224.png" alt="Khan Academy">
-    <p>Khan Academy</p>
-  </a>
+    <select id="companyCategory">
+      <option value="jobs">Jobs</option>
+      <option value="learning">Learning</option>
+      <option value="skills">Skills</option>
+      <option value="finance">Finance</option>
+    </select>
 
-  <!-- SKILLS -->
-  <div class="card skills">
-    <p><b>Web Development</b></p>
-    <p>HTML → CSS → JS → Projects → Job</p>
+    <button onclick="addCompany()">Add</button>
   </div>
 
-  <!-- FINANCE -->
-  <div class="card finance">
-    <p><b>Money Basics</b></p>
-    <p>Budget • Save • Emergency Fund</p>
+  <!-- CARDS GRID -->
+  <div class="grid" id="cards">
+
+    <!-- JOBS -->
+    <a href="https://www.linkedin.com/jobs" target="_blank" class="card jobs">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+      <p>LinkedIn Jobs</p>
+    </a>
+
+    <a href="https://www.indeed.com" target="_blank" class="card jobs">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+      <p>Indeed</p>
+    </a>
+
+    <!-- LEARNING -->
+    <a href="https://www.freecodecamp.org" target="_blank" class="card learning">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+      <p>FreeCodeCamp</p>
+    </a>
+
+    <a href="https://www.khanacademy.org" target="_blank" class="card learning">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png">
+      <p>Khan Academy</p>
+    </a>
+
+    <!-- SKILLS -->
+    <div class="card skills">
+      <p><b>Web Development</b></p>
+      <p>HTML → CSS → JS → Projects → Job</p>
+    </div>
+
+    <!-- FINANCE -->
+    <div class="card finance">
+      <p><b>Money Basics</b></p>
+      <p>Budget • Save • Emergency Fund</p>
+    </div>
+
+    <div class="card finance">
+      <p><b>Market Intro</b></p>
+      <p>Stocks • Trading vs Investing</p>
+      <p class="note">Learn first. Start small.</p>
+    </div>
+
   </div>
 
-  <div class="card finance">
-    <p><b>Market Intro</b></p>
-    <p>Stocks • Trading vs Investing</p>
-    <p class="note">Learn first. Start small.</p>
-  </div>
-
-</div>
 </section>
 
 <footer>
