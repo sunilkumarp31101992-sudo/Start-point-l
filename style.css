@@ -56,3 +56,17 @@ a.card:hover{
   text-decoration: none !important;
   color: inherit !important;
 }
+.add-form{
+  background: var(--card);
+  padding:15px;
+  margin:20px;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.add-form input,
+.add-form select{
+  width:100%;
+  margin:8px 0;
+  padding:8px;
+}
