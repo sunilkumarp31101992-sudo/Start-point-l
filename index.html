@@ -26,7 +26,24 @@
   <button onclick="filterCat('skills')">Skills</button>
   <button onclick="filterCat('finance')">Finance</button>
 </div>
-
+<div class="add-form">
+  <h3>Add Company</h3>
+  
+  <input type="text" id="companyName" placeholder="Company Name">
+  
+  <input type="text" id="companyUrl" placeholder="Company Website URL">
+  
+  <input type="text" id="companyLogo" placeholder="Logo Image URL">
+  
+  <select id="companyCategory">
+    <option value="jobs">Jobs</option>
+    <option value="learning">Learning</option>
+    <option value="skills">Skills</option>
+    <option value="finance">Finance</option>
+  </select>
+  
+  <button onclick="addCompany()">Add</button>
+</div>
 <section>
 <div class="grid" id="cards">
 
