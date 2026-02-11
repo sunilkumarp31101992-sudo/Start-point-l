@@ -1,11 +1,35 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+root{
+  --bg:#f4f4f4; --card:#fff; --text:#222; --header:#111;
 }
-
-.card {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
+.dark{
+  --bg:#0f1115; --card:#1c1f26; --text:#eee; --header:#000;
+}
+body{
+  margin:0; font-family:Arial,sans-serif;
+  background:var(--bg); color:var(--text);
+}
+header{
+  background:var(--header); color:#fff; padding:20px; text-align:center;
+}
+.topbar{
+  display:flex; gap:10px; padding:10px; justify-content:center;
+}
+button, input{
+  padding:8px 12px; border-radius:8px; border:none;
+}
+button{ cursor:pointer; }
+section{ padding:20px; }
+.grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:15px;
+}
+.card{
+  background:var(--card); padding:15px; border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,.1); text-align:center;
+}
+.card img{ width:60px; }
+.card a{ text-decoration:none; color:var(--text); font-weight:bold; }
+.note{ font-size:13px; opacity:.8; }
+.hide{ display:none; }
+footer{
+  background:var(--header); color:#aaa; text-align:center; padding:15px; font-size:13px;
 }
