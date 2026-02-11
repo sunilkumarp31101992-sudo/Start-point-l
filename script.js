@@ -14,3 +14,32 @@ document.getElementById('search').addEventListener('input',e=>{
     c.classList.toggle('hide', !c.innerText.toLowerCase().includes(v));
   });
 });
+function addCompany(){
+
+  const name = document.getElementById('companyName').value;
+  const url = document.getElementById('companyUrl').value;
+  const logo = document.getElementById('companyLogo').value;
+  const category = document.getElementById('companyCategory').value;
+
+  if(!name || !url || !logo){
+    alert("Please fill all fields");
+    return;
+  }
+
+  const card = document.createElement('a');
+  card.href = url;
+  card.target = "_blank";
+  card.className = `card ${category}`;
+
+  card.innerHTML = `
+    <img src="${logo}">
+    <p>${name}</p>
+  `;
+
+  document.getElementById('cards').appendChild(card);
+
+  // Clear form
+  document.getElementById('companyName').value = "";
+  document.getElementById('companyUrl').value = "";
+  document.getElementById('companyLogo').value = "";
+    }
