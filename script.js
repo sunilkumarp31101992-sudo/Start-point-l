@@ -43,3 +43,7 @@ function addCompany(){
   document.getElementById('companyUrl').value = "";
   document.getElementById('companyLogo').value = "";
     }
+function toggleForm(){
+  document.getElementById("companyForm")
+          .classList.toggle("hide");
+}
