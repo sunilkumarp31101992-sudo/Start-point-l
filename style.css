@@ -1,56 +1,78 @@
-/* ===== Base Colors ===== */
-:root{
-  --bg:#f4f6f9;
-  --text:#333;
-  --header:#111;
-}
-
-/* ===== Body ===== */
-body{
+/* RESET */
+*{
   margin:0;
-  font-family: Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* ===== Header ===== */
+body{
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #eef2f7);
+  color:#1e293b;
+}
+
+/* HERO SECTION */
 header{
-  background:var(--header);
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color:white;
   text-align:center;
-  padding:50px 20px;
+  padding:80px 20px;
 }
 
 header h1{
-  margin:0;
-  font-size:32px;
+  font-size:38px;
+  font-weight:700;
 }
 
 header p{
-  margin-top:10px;
+  margin-top:15px;
+  font-size:18px;
   opacity:0.8;
 }
 
-/* ===== Sections ===== */
+/* SECTION CARD STYLE */
 .section{
   text-align:center;
-  padding:50px 20px;
+  padding:50px 25px;
+  margin:50px auto;
+  width:90%;
+  max-width:650px;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.06);
+  transition:0.3s ease;
 }
 
-/* ===== Button ===== */
+.section:hover{
+  transform:translateY(-5px);
+}
+
+/* SECTION HEADINGS */
+.section h2{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.section p{
+  font-size:16px;
+  opacity:0.7;
+}
+
+/* BUTTON */
 .cta-btn{
   display:inline-block;
-  padding:12px 24px;
-  background:linear-gradient(45deg,#2b6df6,#4db8ff);
-  color:white;
+  margin-top:25px;
+  padding:14px 30px;
+  border-radius:50px;
+  font-weight:600;
   text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
-  margin-top:15px;
+  color:white;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  box-shadow:0 10px 25px rgba(37,99,235,0.3);
   transition:0.3s ease;
 }
 
 .cta-btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+  transform:scale(1.05);
+  box-shadow:0 15px 35px rgba(37,99,235,0.4);
 }
