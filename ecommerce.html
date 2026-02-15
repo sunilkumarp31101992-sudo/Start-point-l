@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top E-commerce Platforms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            margin: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 3px 8px;
+            font-size: 12px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Top E-commerce Platforms in India</h1>
+
+<input type="text" id="searchInput" placeholder="Search company..." onkeyup="searchCompany()">
+
+<div class="card">
+    <h2>Amazon India</h2>
+    <span class="badge">E-commerce</span>
+    <p>India’s largest online shopping platform for electronics, fashion & daily needs.</p>
+    <a href="https://www.amazon.in" class="btn" target="_blank">Visit Website</a>
+</div>
+
+<div class="card">
+    <h2>Flipkart</h2>
+    <span class="badge">E-commerce</span>
+    <p>Popular Indian e-commerce platform for mobiles, electronics & fashion.</p>
+    <a href="https://www.flipkart.com" class="btn" target="_blank">Visit Website</a>
+</div>
+
+<div class="card">
+    <h2>Myntra</h2>
+    <span class="badge">Fashion</span>
+    <p>Leading fashion and lifestyle shopping website in India.</p>
+    <a href="https://www.myntra.com" class="btn" target="_blank">Visit Website</a>
+</div>
+
+<script>
+function searchCompany() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.getElementsByClassName("card");
+
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
+        if (title.includes(input)) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+  </html>
