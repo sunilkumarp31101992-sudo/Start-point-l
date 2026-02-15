@@ -8,10 +8,7 @@
 </head>
 
 <body>
-<div style="background:#111; padding:10px;">
-  <a href="index.html" style="color:white; margin-right:15px; text-decoration:none;">Home</a>
-  <a href="ecommerce.html" style="color:white; margin-right:15px; text-decoration:none;">E-commerce</a>
-</div>
+
 <header>
   <h1>StartPoint</h1>
   <p>Learn • Build Skills • Understand Money</p>
@@ -23,95 +20,6 @@
   🛒 Explore E-commerce
   </a>
 </div>
-<div class="topbar">
-  <input id="search" placeholder="Search jobs, learning, finance...">
-  <button onclick="toggleDark()">🌙</button>
-</div>
 
-<div class="topbar">
-  <button onclick="filterCat('all')">All</button>
-  <button onclick="filterCat('jobs')">Jobs</button>
-  <button onclick="filterCat('learning')">Learning</button>
-  <button onclick="filterCat('skills')">Skills</button>
-  <button onclick="filterCat('finance')">Finance</button>
-</div>
-
-<section>
-
-  <!-- ADD COMPANY FORM (Hidden by default) -->
-  <div class="add-form hide" id="companyForm">
-
-    <h2>Add Company</h2>
-
-    <input type="text" id="companyName" placeholder="Company Name">
-    <input type="text" id="companyURL" placeholder="Company Website URL">
-    <input type="text" id="companyLogo" placeholder="Logo Image URL">
-
-    <select id="companyCategory">
-      <option value="jobs">Jobs</option>
-      <option value="learning">Learning</option>
-      <option value="skills">Skills</option>
-      <option value="finance">Finance</option>
-    </select>
-
-    <button onclick="addCompany()">Add</button>
-  </div>
-
-  <!-- CARDS GRID -->
-  <div class="grid" id="cards">
-
-    <!-- JOBS -->
-    <a href="https://www.linkedin.com/jobs" target="_blank" class="card jobs">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
-      <p>LinkedIn Jobs</p>
-    </a>
-
-    <a href="https://www.indeed.com" target="_blank" class="card jobs">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
-      <p>Indeed</p>
-    </a>
-
-    <!-- LEARNING -->
-    <a href="https://www.freecodecamp.org" target="_blank" class="card learning">
-      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
-      <p>FreeCodeCamp</p>
-    </a>
-
-    <a href="https://www.khanacademy.org" target="_blank" class="card learning">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png">
-      <p>Khan Academy</p>
-    </a>
-
-    <!-- SKILLS -->
-    <div class="card skills">
-      <p><b>Web Development</b></p>
-      <p>HTML → CSS → JS → Projects → Job</p>
-    </div>
-
-    <!-- FINANCE -->
-    <div class="card finance">
-      <p><b>Money Basics</b></p>
-      <p>Budget • Save • Emergency Fund</p>
-    </div>
-
-    <div class="card finance">
-      <p><b>Market Intro</b></p>
-      <p>Stocks • Trading vs Investing</p>
-      <p class="note">Learn first. Start small.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<footer>
-<p>This site does not promise money.<br>It helps you start with clarity.</p>
-</footer>
-
-<script src="script.js"></script>
-<hr>
-<p style="text-align:center; font-size:14px;">
-© 2026 Sunil Directory | All Rights Reserved
-</p>
 </body>
 </html>
