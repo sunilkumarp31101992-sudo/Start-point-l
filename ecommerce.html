@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Top E-commerce Platforms</title>
+    <meta charset="UTF-8">
+    <title>Top E-commerce Websites in India (2026 Updated List)</title>
+    <meta name="description" content="Explore the top E-commerce websites in India including Amazon, Flipkart, Myntra, Ajio, Meesho and more. Updated list of best online shopping platforms in 2026.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             background: #f4f6f9;
             margin: 0;
             padding: 20px;
+            color: #333;
         }
 
         h1 {
             text-align: center;
+            margin-bottom: 10px;
         }
 
-        #searchInput {
-            width: 100%;
-            padding: 10px;
-            margin: 20px 0;
-            border-radius: 6px;
-            border: 1px solid #ccc;
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
         }
 
         .card {
-            background: white;
-            padding: 15px;
-            margin: 15px 0;
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
             border-radius: 10px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         }
 
         .card h2 {
-            margin: 0;
+            margin-top: 0;
         }
 
         .badge {
@@ -42,117 +45,66 @@
             padding: 3px 8px;
             font-size: 12px;
             border-radius: 5px;
-            margin: 5px 0;
+            margin-bottom: 8px;
         }
 
         .btn {
             display: inline-block;
-            padding: 8px 12px;
+            padding: 8px 14px;
             background: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 6px;
-            margin-top: 8px;
+            margin-top: 10px;
+            font-size: 14px;
         }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
     </style>
 </head>
+
 <body>
-<div style="background:#111; padding:10px;">
-  <a href="index.html" style="color:white; margin-right:15px; text-decoration:none;">Home</a>
-  <a href="ecommerce.html" style="color:white; margin-right:15px; text-decoration:none;">E-commerce</a>
-</div>
-<h1>Top E-commerce Platforms in India</h1>
 
-<input type="text" id="searchInput" placeholder="Search company..." onkeyup="searchCompany()">
+    <h1>Top E-commerce Websites in India</h1>
+    <p class="subtitle">Updated list of best online shopping platforms in 2026</p>
 
-<div class="card">
-    <h2>Amazon India</h2>
-    <span class="badge">E-commerce</span>
-    <p>India’s largest online shopping platform for electronics, fashion & daily needs.</p>
-    <a href="https://www.amazon.in" class="btn" target="_blank">Visit Website</a>
-</div>
-
-<div class="card">
-    <h2>Flipkart</h2>
-    <span class="badge">E-commerce</span>
-    <p>Popular Indian e-commerce platform for mobiles, electronics & fashion.</p>
-    <a href="https://www.flipkart.com" class="btn" target="_blank">Visit Website</a>
-</div>
-
-<div class="card">
-    <h2>Myntra</h2>
-    <span class="badge">Fashion</span>
-    <p>Leading fashion and lifestyle shopping website in India.</p>
-    <a href="https://www.myntra.com" class="btn" target="_blank">Visit Website</a>
-</div>
-<div class="card">
-    <h2>Ajio</h2>
-    <span class="badge">Fashion</span>
-    <p>Trendy fashion and lifestyle platform by Reliance.</p>
-    <a href="https://www.ajio.com" class="btn" target="_blank">Visit Website</a>
-</div>
-
-<div class="card">
-    <h2>Meesho</h2>
-    <span class="badge">E-commerce</span>
-    <p>Affordable online shopping platform with reselling features.</p>
-    <a href="https://www.meesho.com" class="btn" target="_blank">Visit Website</a>
-</div>
-
-<div class="card">
-    <h2>Snapdeal</h2>
-    <span class="badge">E-commerce</span>
-    <p>Budget-friendly online marketplace in India.</p>
-    <a href="https://www.snapdeal.com" class="btn" target="_blank">Visit Website</a>
-</div>
-
-<div class="card">
-    <h2>Tata CLiQ</h2>
-    <span class="badge">E-commerce</span>
-    <p>Premium fashion and electronics shopping platform.</p>
-    <a href="https://www.tatacliq.com" class="btn" target="_blank">Visit Website</a>
-</div>
-
-<div class="card">
-    <h2>Nykaa</h2>
-    <span class="badge">Beauty</span>
-    <p>Beauty and cosmetics focused shopping platform.</p>
-    <a href="https://www.nykaa.com" class="btn" target="_blank">Visit Website</a>
-</div>
-
-<div class="card">
-    <h2>FirstCry</h2>
-    <span class="badge">Kids</span>
-    <p>India’s largest baby and kids products online store.</p>
-    <a href="https://www.firstcry.com" class="btn" target="_blank">Visit Website</a>
-</div>
-
-<div class="card">
-    <h2>Reliance Digital</h2>
-    <span class="badge">Electronics</span>
-    <p>Online electronics shopping platform by Reliance.</p>
-    <a href="https://www.reliancedigital.in" class="btn" target="_blank">Visit Website</a>
+    <div class="card">
+        <span class="badge">E-commerce</span>
+        <h2>Amazon India</h2>
+        <p>India’s largest online shopping platform offering electronics, fashion, groceries and daily essentials.</p>
+        <a href="https://www.amazon.in" target="_blank" class="btn">Visit Website</a>
     </div>
-<script>
-function searchCompany() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let cards = document.getElementsByClassName("card");
 
-    for (let i = 0; i < cards.length; i++) {
-        let title = cards[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
-        if (title.includes(input)) {
-            cards[i].style.display = "";
-        } else {
-            cards[i].style.display = "none";
-        }
-    }
-}
-</script>
-<hr>
-<p style="text-align:center; font-size:14px;">
-© 2026 Sunil Directory | All Rights Reserved
-</p>
+    <div class="card">
+        <span class="badge">E-commerce</span>
+        <h2>Flipkart</h2>
+        <p>Popular Indian e-commerce marketplace for mobiles, electronics, fashion and home products.</p>
+        <a href="https://www.flipkart.com" target="_blank" class="btn">Visit Website</a>
+    </div>
+
+    <div class="card">
+        <span class="badge">Fashion</span>
+        <h2>Myntra</h2>
+        <p>Leading fashion and lifestyle online shopping website in India.</p>
+        <a href="https://www.myntra.com" target="_blank" class="btn">Visit Website</a>
+    </div>
+
+    <div class="card">
+        <span class="badge">Fashion</span>
+        <h2>Ajio</h2>
+        <p>Trendy fashion and lifestyle platform by Reliance offering premium and budget brands.</p>
+        <a href="https://www.ajio.com" target="_blank" class="btn">Visit Website</a>
+    </div>
+
+    <div class="card">
+        <span class="badge">Marketplace</span>
+        <h2>Meesho</h2>
+        <p>Affordable online shopping platform with reseller and small business support features.</p>
+        <a href="https://www.meesho.com" target="_blank" class="btn">Visit Website</a>
+    </div>
+
 </body>
 </html>
-</body>
-  </html>
