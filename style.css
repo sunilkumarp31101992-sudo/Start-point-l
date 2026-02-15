@@ -93,3 +93,20 @@ a.card:hover{
 .hide{
   display: none;
   }
+/* E-commerce Button Style */
+.cta-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
