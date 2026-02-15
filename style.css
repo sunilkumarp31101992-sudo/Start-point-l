@@ -110,3 +110,48 @@ a.card:hover{
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+.hero {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.hero p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #2563eb, #38bdf8);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  }
