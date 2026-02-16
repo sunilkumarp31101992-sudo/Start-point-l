@@ -3,98 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Budget Smartphones Under ₹15000 (2026)</title>
+<title>Best Budget Mobiles Under ₹15000</title>
 
 <style>
-body{
-font-family:Arial;
-margin:0;
-background:#f2f2f2;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
 }
-header{
-background:#111827;
-color:white;
-text-align:center;
-padding:20px;
+
+.header {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
 }
-.container{
-max-width:1000px;
-margin:auto;
-padding:20px;
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-margin-bottom:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
-.card img{
-width:100%;
-max-height:220px;
-object-fit:contain;
+
+.card:hover {
+  transform: translateY(-5px);
 }
-.price{
-color:green;
-font-size:20px;
-font-weight:bold;
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
-.btn{
-display:inline-block;
-background:#ff9900;
-padding:10px 15px;
-border-radius:20px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-margin-top:10px;
+
+.price {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
 }
-.sticky{
-position:fixed;
-bottom:10px;
-left:50%;
-transform:translateX(-50%);
-background:#ff9900;
-padding:12px 20px;
-border-radius:30px;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
 }
-.sticky a{
-color:black;
-font-weight:bold;
-text-decoration:none;
+
+.btn:hover {
+  background: darkorange;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>🔥 Best Budget Smartphones Under ₹15000</h1>
-</header>
+<div class="header">
+  <h1>Best Budget Mobiles Under ₹15000</h1>
+</div>
 
 <div class="container">
 
-<div class="card">
-<h2>Redmi 13 5G</h2>
-<img src="https://i.imgur.com/Z8pQZfR.png">
-<p class="price">₹12,999</p>
-<p>Snapdragon processor + 5000mAh battery.</p>
-<a href="#" class="btn">🛒 Buy Now</a>
-</div>
+  <!-- Redmi 13 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97" alt="Redmi 13">
+    <h2>Redmi 13 5G</h2>
+    <p class="price">₹12,999</p>
+    <p>Snapdragon Processor • 5000mAh Battery • 50MP Camera</p>
+    <a href="#" class="btn">Buy Now</a>
+  </div>
 
-<div class="card">
-<h2>Realme Narzo 70</h2>
-<img src="https://i.imgur.com/4dKQ8pK.png">
-<p class="price">₹13,499</p>
-<p>Best for gaming + fast charging.</p>
-<a href="#" class="btn">🛒 Buy Now</a>
-</div>
+  <!-- Realme Narzo -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Realme Narzo 70">
+    <h2>Realme Narzo 70</h2>
+    <p class="price">₹13,499</p>
+    <p>Dimensity Chipset • 120Hz Display • Fast Charging</p>
+    <a href="#" class="btn">View Deal</a>
+  </div>
 
-</div>
+  <!-- Samsung -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505" alt="Samsung Galaxy M14">
+    <h2>Samsung Galaxy M14</h2>
+    <p class="price">₹14,299</p>
+    <p>6000mAh Battery • Exynos Processor • 5G Support</p>
+    <a href="#" class="btn">Buy Now</a>
+  </div>
 
-<div class="sticky">
-<a href="#">🔥 View Best Deal</a>
+  <!-- iQOO -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1603898037225-1b6f0e7e3a3b" alt="iQOO Z6 Lite">
+    <h2>iQOO Z6 Lite</h2>
+    <p class="price">₹11,999</p>
+    <p>Gaming Processor • 120Hz Display • Smooth UI</p>
+    <a href="#" class="btn">View Deal</a>
+  </div>
+
 </div>
 
 </body>
