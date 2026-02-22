@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
 Sitemap: https://sunilkumarp31101992-sudo.github.io/Start-point-l/sitemap.xml
