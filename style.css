@@ -37,6 +37,10 @@ header p{
   width: 180px;
   margin-bottom: 20px;
 }
+header img {
+  display: block;
+  margin: 0 auto 20px auto;
+}
 /* SECTION CARD STYLE */
 .section{
   text-align:center;
