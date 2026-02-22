@@ -14,6 +14,12 @@ body{
 }
 
 /* HERO SECTION */
+header {
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle at center, rgba(59,130,246,0.25) 0%, rgba(0,0,0,0) 60%);
+}
 header{
   background: linear-gradient(135deg, #0B0F19, #111827);
   color:#ffffff;
