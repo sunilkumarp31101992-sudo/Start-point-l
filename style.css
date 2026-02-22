@@ -80,3 +80,25 @@ header p{
   background: linear-gradient(135deg, #1D4ED8, #2563EB);
   transform:translateY(-2px);
 }
+
+/* GRID LAYOUT */
+.section-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.section {
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-6px);
+}
