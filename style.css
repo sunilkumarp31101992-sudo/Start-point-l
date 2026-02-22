@@ -34,8 +34,8 @@ header p{
 }
 
 .logo {
-  width: 180px;
-  margin-bottom: 20px;
+    width: 220px;
+    height: auto;
 }
 header img {
   display: block;
