@@ -33,9 +33,12 @@ header p{
   color:#CBD5E1;
 }
 
-.logo {
-    width: 280px;
-    height: auto;
+.logo-text {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 header img {
   display: block;
