@@ -7,7 +7,7 @@
 
 body{
   font-family: 'Segoe UI', sans-serif;
-  background:#0B0F19;
+  background: linear-gradient(180deg, #0B0F19 0%, #0F172A 100%);
   color:#E5E7EB;
 }
 
@@ -20,6 +20,7 @@ body{
 
 /* NAVBAR */
 .navbar{
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
   position:fixed;
   width:100%;
   top:0;
@@ -73,7 +74,10 @@ body{
   padding-top:140px;
   padding-bottom:120px;
   text-align:center;
-}
+  background:
+    radial-gradient(circle at center, rgba(59,130,246,0.25), transparent 60%),
+    linear-gradient(135deg, #0B0F19, #111827);
+  }
 
 .tagline{
   font-size:14px;
@@ -109,7 +113,9 @@ body{
   background:#3B82F6;
   color:white;
 }
-
+.primary:hover{
+  box-shadow: 0 0 20px rgba(59,130,246,0.6);
+  }
 .secondary{
   border:1px solid rgba(255,255,255,0.2);
   color:#E5E7EB;
