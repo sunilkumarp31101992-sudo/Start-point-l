@@ -91,14 +91,5 @@ header p{
   margin: 60px auto;
 }
 
-.section {
-  background: #ffffff;
-  padding: 40px 25px;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-}
 
-.section:hover {
-  transform: translateY(-6px);
-}
+
