@@ -33,6 +33,10 @@ header p{
   color:#CBD5E1;
 }
 
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
 /* SECTION CARD STYLE */
 .section{
   text-align:center;
