@@ -269,3 +269,32 @@ body{
   font-size: 12px;
   opacity: 0.6;
   }
+/* ===== ACCESSORIES TEXT FIX ===== */
+
+.accessories h2 {
+  font-size: 24px;
+}
+
+.accessories p {
+  font-size: 16px;
+}
+
+/* Card ke andar text bada karo */
+.accessories .card {
+  font-size: 18px;   /* 👈 main fix */
+  font-weight: 600;
+}
+
+/* Mobile ke liye aur readable */
+@media (max-width: 480px) {
+  .accessories .card {
+    font-size: 16px;
+  }
+}
+.accessories h2 {
+  letter-spacing: 0.5px;
+}
+
+.accessories p {
+  opacity: 0.8;
+}
