@@ -298,3 +298,30 @@ body{
 .accessories p {
   opacity: 0.8;
 }
+/* ===== ACCESSORIES BUTTON BIG SIZE ===== */
+
+.accessories .card {
+  font-size: 20px;        /* text bada */
+  padding: 18px 12px;     /* button height + width */
+  min-height: 90px;       /* card bada */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.accessories .card:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 480px) {
+  .accessories .card {
+    font-size: 17px;
+    padding: 16px 10px;
+  }
+}
