@@ -25,3 +25,112 @@ body {
     border-radius: 12px;
     text-align: center;
 }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #1e3a8a, #0b1220 60%);
+    color: white;
+}
+
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
+}
+
+.hero p {
+    color: #94a3b8;
+}
+
+/* BUTTON */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #2563eb, #3b82f6);
+    border-radius: 14px;
+    margin-top: 15px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(59,130,246,0.5);
+}
+
+/* SECTION */
+.section {
+    margin-top: 40px;
+}
+
+/* FEATURE BOX */
+.highlight {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* CARD */
+.card {
+    background: linear-gradient(145deg, #111827, #0b1220);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 
+        0 10px 30px rgba(0,0,0,0.6),
+        inset 0 0 20px rgba(255,255,255,0.02);
+    text-decoration: none;
+    color: white;
+}
+
+/* ACCESSORIES */
+.accessories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.acc-btn {
+    background: #1f2937;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.acc-btn.active {
+    background: #f59e0b;
+    color: black;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 30px;
+    }
