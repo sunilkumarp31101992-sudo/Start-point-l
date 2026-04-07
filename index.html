@@ -1,13 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width,
-initial-scale=1.0">
-
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>GadgetSphere - Smart Gadget Reviews</title>
 
@@ -27,9 +22,9 @@ body {
 
 /* BRAND */
 .brand {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 12px 0;
 }
 
 /* HERO */
@@ -53,9 +48,9 @@ body {
     display: block;
     width: 100%;
     padding: 16px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
-    background: #2563eb;
+    background: linear-gradient(45deg, #2563eb, #3b82f6);
     color: white;
     border-radius: 12px;
     text-decoration: none;
@@ -70,29 +65,36 @@ body {
 
 .section h2 {
     font-size: 22px;
+    margin-bottom: 15px;
 }
 
 /* GRID */
 .grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
 /* CARD */
 .card {
     background: #111a2e;
-    padding: 20px;
+    padding: 18px;
     border-radius: 14px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 .card h3 {
-    font-size: 18px;
-    margin: 0;
+    font-size: 16px;
+    margin-bottom: 6px;
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 13px;
     color: #cbd5e1;
 }
 
@@ -129,7 +131,7 @@ body {
     <a href="gaming-accessories.html" class="btn">🔥 View Best Deals</a>
 </div>
 
-<!-- 🔥 GAMING ACCESSORIES (MONEY PAGE) -->
+<!-- GAMING ACCESSORIES -->
 <div class="section">
     <div class="highlight">
         <h2>🎮 Gaming Accessories Under ₹999</h2>
@@ -138,7 +140,7 @@ body {
     </div>
 </div>
 
-<!-- 📱 GAMING PHONES -->
+<!-- GAMING PHONES -->
 <div class="section">
     <div class="highlight">
         <h2>📱 Best Gaming Phones Under ₹20,000</h2>
@@ -153,31 +155,31 @@ body {
 
     <div class="grid">
 
-        <a href="budget-phones.html">
+        <a href="budget-phones.html" style="text-decoration:none; color:white;">
         <div class="card">
             <h3>Budget Phones</h3>
             <p>Best under ₹20K</p>
         </div>
         </a>
 
-        <a href="gaming-phones.html">
+        <a href="gaming-phones.html" style="text-decoration:none; color:white;">
         <div class="card">
             <h3>🎮 Gaming Phones 🔥</h3>
-            <p>Best performance phones for gaming</p>
+            <p>Best for gaming</p>
         </div>
         </a>
 
-        <a href="camera-phones.html">
+        <a href="camera-phones.html" style="text-decoration:none; color:white;">
         <div class="card">
-            <h3>Camera Phones</h3>
-            <p>Best for photography</p>
+            <h3>📸 Camera Phones</h3>
+            <p>Best for photos</p>
         </div>
         </a>
 
-        <a href="gaming-accessories.html">
+        <a href="gaming-accessories.html" style="text-decoration:none; color:white;">
         <div class="card">
-            <h3>🎮 Gaming Accessories</h3>
-            <p>Top gadgets under ₹999</p>
+            <h3>🎮 Accessories</h3>
+            <p>Under ₹999</p>
         </div>
         </a>
 
@@ -190,21 +192,27 @@ body {
 
     <div class="grid">
 
-        <a href="#">
+        <a href="#" style="text-decoration:none; color:white;">
         <div class="card">
             <h3>🎧 Earbuds</h3>
         </div>
         </a>
 
-        <a href="#">
+        <a href="#" style="text-decoration:none; color:white;">
         <div class="card">
             <h3>🔋 Power Bank</h3>
         </div>
         </a>
 
-        <a href="gaming-accessories.html">
+        <a href="gaming-accessories.html" style="text-decoration:none; color:white;">
         <div class="card">
             <h3>🎮 Gaming Gear 🔥</h3>
+        </div>
+        </a>
+
+        <a href="#" style="text-decoration:none; color:white;">
+        <div class="card">
+            <h3>⌚ Smartwatch</h3>
         </div>
         </a>
 
@@ -228,4 +236,4 @@ This site contains affiliate links. We may earn commission at no extra cost to y
 </div>
 
 </body>
- </html> 
+</html>   
