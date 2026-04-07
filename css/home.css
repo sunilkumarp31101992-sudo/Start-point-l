@@ -1,1 +1,84 @@
-/* homepage styles */
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 35px 10px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #cbd5e1;
+}
+
+/* SECTION */
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* CARD */
+.card {
+    background: #111a2e;
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 12px;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* HIGHLIGHT BOX */
+.highlight {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+}
+/* SECTION */
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* CARD */
+.card {
+    background: #111a2e;
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 12px;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* HIGHLIGHT */
+.highlight {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+}
