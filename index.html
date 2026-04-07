@@ -1,66 +1,83 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GadgetSphere - Smart Gadget Reviews</title>
+
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(180deg, #0b1220, #020617);
+    background: #0b1220;
     color: white;
 }
 
 .container {
-    padding: 18px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* BRAND */
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 40px 10px;
+    padding: 35px 10px;
 }
 
 .hero h1 {
     font-size: 28px;
-    font-weight: bold;
+    line-height: 1.4;
 }
 
 .hero p {
     font-size: 16px;
-    color: #9ca3af;
+    color: #cbd5e1;
 }
 
 /* BUTTON */
 .btn {
     display: block;
-    padding: 15px;
-    font-size: 16px;
-    background: linear-gradient(45deg, #3b82f6, #6366f1);
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #2563eb;
     color: white;
     border-radius: 12px;
     text-decoration: none;
-    margin-top: 15px;
-    box-shadow: 0 4px 15px rgba(59,130,246,0.4);
+    margin-top: 18px;
+    text-align: center;
 }
 
 /* SECTION */
 .section {
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .section h2 {
     font-size: 22px;
 }
 
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
 /* CARD */
 .card {
-    background: linear-gradient(145deg, #111827, #1f2937);
+    background: #111a2e;
     padding: 20px;
     border-radius: 14px;
-    margin-top: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
 .card h3 {
@@ -70,26 +87,25 @@ body {
 
 .card p {
     font-size: 14px;
-    color: #9ca3af;
+    color: #cbd5e1;
 }
 
 /* HIGHLIGHT */
 .highlight {
-    background: linear-gradient(135deg, #1e293b, #0f172a);
+    background: #1e293b;
     padding: 25px;
-    border-radius: 16px;
+    border-radius: 14px;
     text-align: center;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.5);
 }
 
 /* FOOTER */
 .footer {
     text-align: center;
     font-size: 12px;
-    color: #6b7280;
-    margin-top: 30px;
+    color: #777;
+    margin-top: 40px;
 }
-     </style>
+</style>
 
 </head>
 
@@ -97,19 +113,31 @@ body {
 
 <div class="container">
 
+<!-- BRAND -->
+<div class="brand">GadgetSphere</div>
+
 <!-- HERO -->
 <div class="hero">
     <h1>🔥 Find the Best Gadgets for Your Life</h1>
     <p>Honest reviews, smart picks & best deals 💰</p>
-    <a href="gaming-accessories.html" class="btn">🔥 Trending Deals</a>
+    <a href="gaming-accessories.html" class="btn">🔥 View Best Deals</a>
 </div>
 
-<!-- 🔥 MONEY SECTION -->
+<!-- 🔥 GAMING ACCESSORIES (MONEY PAGE) -->
 <div class="section">
     <div class="highlight">
         <h2>🎮 Gaming Accessories Under ₹999</h2>
-        <p>Boost your gameplay instantly with these gadgets 🔥</p>
-        <a href="gaming-accessories.html" class="btn">Explore Now</a>
+        <p>Boost your gameplay instantly 🔥</p>
+        <a href="gaming-accessories.html" class="btn">Shop Now</a>
+    </div>
+</div>
+
+<!-- 📱 GAMING PHONES -->
+<div class="section">
+    <div class="highlight">
+        <h2>📱 Best Gaming Phones Under ₹20,000</h2>
+        <p>High performance phones for BGMI & COD 🔥</p>
+        <a href="gaming-phones.html" class="btn">View Gaming Phones</a>
     </div>
 </div>
 
@@ -119,28 +147,28 @@ body {
 
     <div class="grid">
 
-        <a href="budget-phones.html" style="text-decoration:none;">
+        <a href="budget-phones.html">
         <div class="card">
             <h3>Budget Phones</h3>
-            <p>Best phones under ₹20,000</p>
+            <p>Best under ₹20K</p>
         </div>
         </a>
 
-        <a href="gaming-phones.html" style="text-decoration:none;">
+        <a href="gaming-phones.html">
         <div class="card">
-            <h3>Gaming Phones</h3>
-            <p>Top phones for BGMI & COD</p>
+            <h3>🎮 Gaming Phones 🔥</h3>
+            <p>Best performance phones for gaming</p>
         </div>
         </a>
 
-        <a href="camera-phones.html" style="text-decoration:none;">
+        <a href="camera-phones.html">
         <div class="card">
             <h3>Camera Phones</h3>
-            <p>Best phones for photography</p>
+            <p>Best for photography</p>
         </div>
         </a>
 
-        <a href="gaming-accessories.html" style="text-decoration:none;">
+        <a href="gaming-accessories.html">
         <div class="card">
             <h3>🎮 Gaming Accessories</h3>
             <p>Top gadgets under ₹999</p>
@@ -150,25 +178,25 @@ body {
     </div>
 </div>
 
-<!-- ACCESSORIES -->
+<!-- MUST BUY -->
 <div class="section">
     <h2>🔥 Must Buy Gadgets</h2>
 
     <div class="grid">
 
-        <a href="#" style="text-decoration:none;">
+        <a href="#">
         <div class="card">
             <h3>🎧 Earbuds</h3>
         </div>
         </a>
 
-        <a href="#" style="text-decoration:none;">
+        <a href="#">
         <div class="card">
             <h3>🔋 Power Bank</h3>
         </div>
         </a>
 
-        <a href="gaming-accessories.html" style="text-decoration:none;">
+        <a href="gaming-accessories.html">
         <div class="card">
             <h3>🎮 Gaming Gear 🔥</h3>
         </div>
@@ -181,7 +209,7 @@ body {
 <div class="section">
     <div class="highlight">
         <h2>💰 Don’t Miss Best Deals</h2>
-        <p>Click below to explore trending gadgets now</p>
+        <p>Click below to grab best offers now</p>
         <a href="gaming-accessories.html" class="btn">Check Deals</a>
     </div>
 </div>
@@ -194,4 +222,4 @@ This site contains affiliate links. We may earn commission at no extra cost to y
 </div>
 
 </body>
-  </html> 
+ </html> 
