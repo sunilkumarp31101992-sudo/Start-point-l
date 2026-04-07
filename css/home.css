@@ -82,3 +82,40 @@
     border-radius: 14px;
     text-align: center;
 }
+/* FIX LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BUTTON IMPROVE */
+.btn {
+    box-shadow: 0 4px 15px rgba(37,99,235,0.4);
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+/* CARD IMPROVE */
+.card {
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background: #16213a;
+}
+
+/* TEXT READABILITY */
+.card p {
+    color: #94a3b8;
+}
+
+/* SECTION SPACING */
+.section {
+    margin-top: 45px;
+}
