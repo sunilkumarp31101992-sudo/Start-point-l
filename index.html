@@ -3,125 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GadgetSphere</title>
 
-<title>GadgetSphere - Smart Gadget Reviews</title>
-<link rel="stylesheet" href="css/home.css">
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0b1220;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero h1 {
+  font-size: 26px;
+}
+
+.hero p {
+  color: #94a3b8;
+}
+
+.btn {
+  display: block;
+  margin-top: 15px;
+  padding: 14px;
+  background: #2563eb;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTION */
+.section {
+  margin-top: 30px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* CARD */
+.card {
+  background: #111a2e;
+  padding: 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.card p {
+  color: #94a3b8;
+  font-size: 13px;
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-<!-- BRAND -->
-<div class="brand">GadgetSphere</div>
-
-<!-- HERO -->
 <div class="hero">
-    <h1>🔥 Find the Best Gadgets for Your Life</h1>
-    <p>Honest reviews, smart picks & best deals 💰</p>
-    <a href="gaming-accessories.html" class="btn">🔥 View Best Deals</a>
+  <h1>🔥 Best Gadgets for You</h1>
+  <p>Smart picks & best deals</p>
+  <a href="gaming-accessories.html" class="btn">View Deals</a>
 </div>
 
-<!-- 🔥 MONEY SECTION -->
 <div class="section">
-    <h2>🎮 Gaming Accessories Under ₹999</h2>
-    <p>Boost your gameplay instantly 🔥</p>
-    <a href="gaming-accessories.html" class="btn">Shop Now</a>
-</div>
+  <h2>📱 Explore Categories</h2>
 
-<!-- 📱 GAMING PHONES -->
-<div class="section">
-    <h2>📱 Best Gaming Phones Under ₹20,000</h2>
-    <p>High performance phones for BGMI & COD 🔥</p>
-    <a href="gaming-phones.html" class="btn">View Gaming Phones</a>
-</div>
+  <div class="grid">
 
-<!-- 📱 CATEGORIES -->
-<div class="section">
-    <h2>📱 Explore Categories</h2>
-<div class="section">
-  <h2>📱 Explore Popular Categories</h2>
-
-  <div class="category-grid">
-
-    <div class="category-card">
+    <a href="budget-phones.html" class="card">
       <h3>Budget Phones</h3>
-      <p>Best phones under ₹20,000</p>
-      <a href="budget-phones.html">Explore</a>
-    </div>
+      <p>Under ₹20K</p>
+    </a>
 
-    <div class="category-card">
-      <h3>Gaming Phones</h3>
-      <p>Top phones for gamers</p>
-      <a href="gaming-phones.html">Explore</a>
-    </div>
+    <a href="gaming-phones.html" class="card">
+      <h3>🎮 Gaming Phones</h3>
+      <p>Best for gaming</p>
+    </a>
 
-    <div class="category-card">
-      <h3>Camera Phones</h3>
-      <p>Capture the best shots</p>
-      <a href="camera-phones.html">Explore</a>
-    </div>
+    <a href="camera-phones.html" class="card">
+      <h3>📸 Camera Phones</h3>
+      <p>Best shots</p>
+    </a>
+
+    <a href="gaming-accessories.html" class="card">
+      <h3>🎮 Accessories</h3>
+      <p>Under ₹999</p>
+    </a>
 
   </div>
-</div>
- 
-
-        <a href="gaming-accessories.html">
-            <div class="card">
-                <h3>🎮 Accessories</h3>
-                <p>Under ₹999</p>
-            </div>
-        </a>
-
-    </div>
-</div>
-
-<!-- 🔥 MUST BUY -->
-<div class="section">
-    <h2>🔥 Must Buy Gadgets</h2>
-
-    <div class="grid">
-
-        <a href="#">
-            <div class="card">
-                <h3>🎧 Earbuds</h3>
-            </div>
-        </a>
-
-        <a href="#">
-            <div class="card">
-                <h3>🔋 Power Bank</h3>
-            </div>
-        </a>
-
-        <a href="gaming-accessories.html">
-            <div class="card">
-                <h3>🎮 Gaming Gear 🔥</h3>
-            </div>
-        </a>
-
-        <a href="#">
-            <div class="card">
-                <h3>⌚ Smartwatch</h3>
-            </div>
-        </a>
-
-    </div>
-</div>
-
-<!-- 💰 FINAL CTA -->
-<div class="section">
-    <h2>💰 Don’t Miss Best Deals</h2>
-    <p>Click below to grab best offers now</p>
-    <a href="gaming-accessories.html" class="btn">Check Deals</a>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-This site contains affiliate links. We may earn commission at no extra cost to you.
 </div>
 
 </div>
 
 </body>
-</html> 
+</html>
