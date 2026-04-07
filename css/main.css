@@ -1,1 +1,27 @@
-body {}
+/* BASE RESET */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b1220;
+    color: white;
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* BUTTON */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #2563eb;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
