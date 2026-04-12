@@ -4,47 +4,72 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Top 25 Best Budget Phones Under 15000 in 2026 | Full Specs & Buying Links</title>
-
-<meta name="description" content="Explore the top 25 best budget smartphones under 15000 in India (2026). Compare performance, battery, camera and buy from Amazon & Flipkart.">
-
-<meta name="keywords" content="Top 25 budget phones 2026, best phone under 15000 India, gaming phone under 15000, buy budget smartphone">
-
-<meta name="author" content="Sunil Kumar">
-
-<meta property="og:title" content="Top 25 Best Budget Phones Under 15000 (2026)">
-<meta property="og:description" content="Compare and buy the best budget smartphones with specs and performance details.">
-<meta property="og:type" content="website">
-
-<link rel="canonical" href="https://sunilkumarp31101992-sudo.github.io/Start-point-l/top25-budget-phone.html">
+<title>Top 25 Budget Phones Under ₹15000 (2026)</title>
 
 <style>
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#f4f6f9;
-}
-
-header{
-    background:#111;
+    font-family: 'Segoe UI', sans-serif;
+    background:#0f172a;
     color:white;
-    text-align:center;
-    padding:20px;
 }
 
+/* HEADER */
+header{
+    text-align:center;
+    padding:25px;
+    background:linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+header h1{
+    font-size:26px;
+}
+
+header p{
+    color:#94a3b8;
+}
+
+/* TOP PICK */
+.top-pick{
+    background:#1e293b;
+    margin:20px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #334155;
+}
+
+/* FILTER */
+.filters{
+    text-align:center;
+    margin:20px;
+}
+
+.filters button{
+    margin:5px;
+    padding:8px 12px;
+    border:none;
+    border-radius:8px;
+    background:#334155;
+    color:white;
+}
+
+/* GRID */
 .container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:20px;
+    gap:15px;
+    padding:15px;
 }
 
+/* CARD */
 .card{
-    background:white;
-    border-radius:10px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius:15px;
     padding:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
     text-align:center;
+    border:1px solid rgba(255,255,255,0.1);
     transition:0.3s;
 }
 
@@ -52,25 +77,41 @@ header{
     transform:translateY(-5px);
 }
 
+/* IMAGE */
 .card img{
-    width:150px;
-    height:200px;
+    width:100%;
+    height:180px;
     object-fit:contain;
 }
 
+/* PRICE */
 .price{
-    color:green;
+    color:#22c55e;
     font-weight:bold;
 }
 
+/* BUTTON */
 .btn{
     display:block;
-    margin:8px 0;
-    padding:8px;
-    background:#0073e6;
+    margin-top:10px;
+    padding:10px;
+    background:#2563eb;
+    border-radius:8px;
     color:white;
     text-decoration:none;
-    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+    font-size:12px;
 }
 </style>
 
@@ -79,21 +120,36 @@ header{
 <body>
 
 <header>
-<h1>Top 25 Budget Phones Under ₹15000 (2026)</h1>
-<p>Performance | Battery | Camera | Buying Links</p>
+<h1>🔥 Top 25 Budget Phones Under ₹15000</h1>
+<p>Performance | Battery | Camera | Best Deals</p>
 </header>
-<div style="padding:20px; text-align:center;">
-<p>
-Looking for the best budget phones under 15000 in india in 2026? 
-Here we have listed the top 25 smartphones of 2026 based on performance, battery life, camera quality, and overall value for money. 
-Whether you need a phone for gaming, daily use, or photography, this list will help you choose the right device within your budget.
-</p>
+
+<!-- TOP PICK -->
+<div class="top-pick">
+<h2>🏆 Best Overall</h2>
+<h3>iQOO Z7 5G</h3>
+<p>⚡ Best performance under ₹15000</p>
+
+<a class="btn" href="https://www.amazon.in/s?k=iQOO+Z7+5G&tag=gadgetsph019-21" target="_blank">
+🔥 Buy Now
+</a>
 </div>
-<div class="container">
 
-<!-- PHONE TEMPLATE START -->
+<!-- FILTER -->
+<div class="filters">
+<button>All</button>
+<button>Gaming 🎮</button>
+<button>Battery 🔋</button>
+</div>
+
+<!-- PRODUCTS -->
+<div class="container" id="products"></div>
+
+<div class="footer">
+This page contains affiliate links. We may earn commission at no extra cost to you.
+</div>
+
 <script>
-
 const tag = "gadgetsph019-21";
 
 const phones = [
@@ -123,34 +179,33 @@ const phones = [
 {name:"iQOO Z9 5G", price:"₹14,499"},
 {name:"Poco M5", price:"₹10,999"},
 {name:"Motorola G34 5G", price:"₹12,999"},
-{name:"Lava Agni 2 Lite", price:"₹14,999"}
+{name:"Lava Agni Lite", price:"₹14,999"}
 ];
 
-document.write(
+document.getElementById("products").innerHTML =
 phones.map(phone => `
 <div class="card">
 
-<img src="https://dummyimage.com/150x200/cccccc/000000&text=Phone" alt="${phone.name}">
+<img src="https://via.placeholder.com/200?text=${encodeURIComponent(phone.name)}">
 
 <h3>${phone.name}</h3>
+
+<p>⭐⭐⭐⭐☆ (4.3/5)</p>
+
+<p style="color:#22c55e;">✔ Good performance ✔ Fast charging</p>
+<p style="color:red;">❌ Average camera</p>
 
 <p class="price">${phone.price}</p>
 
 <a class="btn" 
-href="https://www.amazon.in/?tag=${tag}" 
+href="https://www.amazon.in/s?k=${encodeURIComponent(phone.name + ' smartphone')}&tag=${tag}" 
 target="_blank">
-🔥 Check Price on Amazon
+🔥 Check Price
 </a>
 
 </div>
-`).join("")
-);
-
-    </script>
-
-<!-- PHONE TEMPLATE END -->
-
-</div>
+`).join("");
+</script>
 
 </body>
 </html>
