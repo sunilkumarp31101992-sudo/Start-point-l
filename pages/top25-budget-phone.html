@@ -94,197 +94,57 @@ Whether you need a phone for gaming, daily use, or photography, this list will h
 <!-- PHONE TEMPLATE START -->
 
 <script>
+const tag = "YOURTAG-21"; // 👈 apna affiliate ID yahan daal
+
 const phones = [
-{
-name: "Redmi 13C",
-price: "₹10,999",
-image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Realme Narzo N55",
-price: "₹11,499",
-image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Samsung Galaxy M14",
-price: "₹12,990",
-image: "https://images.unsplash.com/photo-1580910051074-3eb694886505",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "iQOO Z6 Lite",
-price: "₹13,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Poco M6",
-price: "₹10,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Motorola G54",
-price: "₹14,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Vivo T1x",
-price: "₹11,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Infinix Zero 5G",
-price: "₹12,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Tecno Pova 5",
-price: "₹11,799",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Lava Blaze 5G",
-price: "₹10,899",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Realme C55",
-price: "₹12,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Redmi Note 12",
-price: "₹14,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Samsung Galaxy F14",
-price: "₹13,990",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "iQOO Z7",
-price: "₹14,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Poco X5",
-price: "₹14,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Motorola G73",
-price: "₹14,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Vivo Y27",
-price: "₹13,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Infinix Note 30",
-price: "₹12,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Realme Narzo 60",
-price: "₹14,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Redmi 12",
-price: "₹11,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Samsung Galaxy M34",
-price: "₹14,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "iQOO Z9",
-price: "₹14,499",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Poco M5",
-price: "₹10,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Motorola G34",
-price: "₹12,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-},
-{
-name: "Lava Agni 2 Lite",
-price: "₹14,999",
-image: "https://via.placeholder.com/150x200",
-amazon: "https://www.amazon.in",
-flipkart: "https://www.flipkart.com"
-}
+{ name:"Redmi 13C", price:"₹10,999", image:"https://m.media-amazon.com/images/I/81Kfs0cYjFL._SX679_.jpg", id:"B0CJY3W3JZ" },
+{ name:"Realme Narzo N55", price:"₹11,499", image:"https://m.media-amazon.com/images/I/71VW8LmqqPL._SX679_.jpg", id:"B0BZ47FZ3G" },
+{ name:"Samsung Galaxy M14", price:"₹12,990", image:"https://m.media-amazon.com/images/I/81I3w4J6yjL._SX679_.jpg", id:"B0BY8MCQ9S" },
+{ name:"iQOO Z6 Lite", price:"₹13,499", image:"https://m.media-amazon.com/images/I/61QRgOgBx0L._SX679_.jpg", id:"B0BBFKM4K6" },
+{ name:"Poco M6", price:"₹10,499", image:"https://m.media-amazon.com/images/I/71T5NVOgbpL._SX679_.jpg", id:"B0CL5Z1C8Y" },
+{ name:"Motorola G54", price:"₹14,999", image:"https://m.media-amazon.com/images/I/71oX9s1sZRL._SX679_.jpg", id:"B0CFXKFT2Q" },
+{ name:"Vivo T1x", price:"₹11,999", image:"https://m.media-amazon.com/images/I/71DJcwJjJ-L._SX679_.jpg", id:"B09V2X2V4X" },
+{ name:"Infinix Zero 5G", price:"₹12,499", image:"https://m.media-amazon.com/images/I/71zY7sG9DPL._SX679_.jpg", id:"B09XBB7W2M" },
+{ name:"Tecno Pova 5", price:"₹11,799", image:"https://m.media-amazon.com/images/I/71p6Z2x3x1L._SX679_.jpg", id:"B0C9VZ4X5F" },
+{ name:"Lava Blaze 5G", price:"₹10,899", image:"https://m.media-amazon.com/images/I/71xxXU2lWnL._SX679_.jpg", id:"B0B6T1Y4YQ" },
+
+{ name:"Realme C55", price:"₹12,999", image:"https://m.media-amazon.com/images/I/71N9D9A0bSL._SX679_.jpg", id:"B0BZP4B8Z5" },
+{ name:"Redmi Note 12", price:"₹14,499", image:"https://m.media-amazon.com/images/I/71SGl7xwR-L._SX679_.jpg", id:"B0BQ3ZQ7JZ" },
+{ name:"Samsung Galaxy F14", price:"₹13,990", image:"https://m.media-amazon.com/images/I/81I3w4J6yjL._SX679_.jpg", id:"B0BY8MCQ9S" },
+{ name:"iQOO Z7", price:"₹14,999", image:"https://m.media-amazon.com/images/I/61JS7lF2aqL._SX679_.jpg", id:"B07WFPM6DY" },
+{ name:"Poco X5", price:"₹14,499", image:"https://m.media-amazon.com/images/I/71hZ6M3k3EL._SX679_.jpg", id:"B0BQ3ZQ7JZ" },
+{ name:"Motorola G73", price:"₹14,999", image:"https://m.media-amazon.com/images/I/71oX9s1sZRL._SX679_.jpg", id:"B0CFXKFT2Q" },
+{ name:"Vivo Y27", price:"₹13,499", image:"https://m.media-amazon.com/images/I/71DJcwJjJ-L._SX679_.jpg", id:"B09V2X2V4X" },
+{ name:"Infinix Note 30", price:"₹12,999", image:"https://m.media-amazon.com/images/I/71zY7sG9DPL._SX679_.jpg", id:"B09XBB7W2M" },
+{ name:"Realme Narzo 60", price:"₹14,499", image:"https://m.media-amazon.com/images/I/71VW8LmqqPL._SX679_.jpg", id:"B0BZ47FZ3G" },
+{ name:"Redmi 12", price:"₹11,499", image:"https://m.media-amazon.com/images/I/81Kfs0cYjFL._SX679_.jpg", id:"B0CJY3W3JZ" },
+
+{ name:"Samsung Galaxy M34", price:"₹14,999", image:"https://m.media-amazon.com/images/I/81I3w4J6yjL._SX679_.jpg", id:"B0BY8MCQ9S" },
+{ name:"iQOO Z9", price:"₹14,499", image:"https://m.media-amazon.com/images/I/61JS7lF2aqL._SX679_.jpg", id:"B07WFPM6DY" },
+{ name:"Poco M5", price:"₹10,999", image:"https://m.media-amazon.com/images/I/71T5NVOgbpL._SX679_.jpg", id:"B0CL5Z1C8Y" },
+{ name:"Motorola G34", price:"₹12,999", image:"https://m.media-amazon.com/images/I/71oX9s1sZRL._SX679_.jpg", id:"B0CFXKFT2Q" },
+{ name:"Lava Agni Lite", price:"₹14,999", image:"https://m.media-amazon.com/images/I/71xxXU2lWnL._SX679_.jpg", id:"B0B6T1Y4YQ" }
 ];
 
 document.write(
 phones.map(phone => `
 <div class="card">
+
 <img src="${phone.image}" alt="${phone.name}">
+
 <h3>${phone.name}</h3>
+
 <p>6.5" Display | 5000mAh Battery | 50MP Camera</p>
+
 <p class="price">${phone.price}</p>
-<a class="btn" href="${phone.amazon}" target="_blank">Buy on Amazon</a>
-<a class="btn" href="${phone.flipkart}" target="_blank">Buy on Flipkart</a>
+
+<a class="btn" href="https://www.amazon.in/dp/${phone.id}?tag=${tag}" target="_blank">
+🔥 Check Price on Amazon
+</a>
+
 </div>
 `).join("")
 );
-    
 </script>
 
 <!-- PHONE TEMPLATE END -->
