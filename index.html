@@ -1,230 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GadgetSphere</title>
 
 <style>
 body {
-    margin: 0;
+    margin:0;
     font-family: Arial;
-    background: #0f172a;
-    color: white;
+    background:#0f172a;
+    color:white;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    background: #020617;
-    position: sticky;
-    top: 0;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 20px;
+    background:#020617;
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #00d4ff;
-}
-
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
+    color:#00d4ff;
+    font-weight:bold;
+    font-size:20px;
 }
 
 .hero {
-    text-align: center;
-    padding: 60px 20px;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#020617,#0f172a);
 }
 
 .btn {
-    background: #00d4ff;
-    color: black;
-    padding: 10px 20px;
-    margin-top: 10px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 5px;
+    background:#00d4ff;
+    color:black;
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:5px;
+    display:inline-block;
+    margin-top:10px;
 }
 
 .section {
-    padding: 40px;
+    padding:20px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:15px;
 }
 
 .card {
-    background: #1e293b;
-    padding: 15px;
-    border-radius: 10px;
+    background:#1e293b;
+    padding:12px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
 }
 
 .card img {
-    width: 100%;
+    width:100%;
 }
 
 .price {
-    color: #00ff99;
+    color:#00ff99;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
+.view-btn {
+    text-align:center;
+    margin-top:15px;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <div class="logo">GadgetSphere</div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Reviews</a>
-        <a href="#">Comparisons</a>
-        <a href="#">Deals</a>
-    </nav>
+<div class="logo">GadgetSphere</div>
 </header>
 
 <section class="hero">
-    <h1>Best Gadgets & Reviews 2026</h1>
-    <p>Find top gadgets at best price</p>
-    <a href="#" class="btn">Explore Now</a>
+<h1>🔥 Find Best Gadgets</h1>
+<p>Compare • Review • Buy Smart</p>
+<a href="#" class="btn">Explore</a>
 </section>
 
 <!-- 📱 Mobiles -->
 <section class="section">
-<h2>🔥 Top Picks (Mobiles)</h2>
+<h2>📱 Mobiles</h2>
+<div class="grid" id="mobileContainer"></div>
+<div class="view-btn">
+<a href="#" class="btn">View All</a>
+</div>
+</section>
 
-<div class="slider">
-
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <h3>iPhone 15</h3>
-        <p class="price">₹79,999</p>
-        <p>👤 Camera Lovers</p>
-        <a href="#" class="btn">Check Price</a>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <h3>Samsung S24</h3>
-        <p class="price">₹69,999</p>
-        <p>👤 Performance</p>
-        <a href="#" class="btn">Check Price</a>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <h3>OnePlus 12</h3>
-        <p class="price">₹64,999</p>
-        <p>👤 Gaming</p>
-        <a href="#" class="btn">Check Price</a>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <h3>Redmi Note 13</h3>
-        <p class="price">₹24,999</p>
-        <p>👤 Budget</p>
-        <a href="#" class="btn">Check Price</a>
-    </div>
-
+<!-- 💻 Laptops -->
+<section class="section">
+<h2>💻 Laptops</h2>
+<div class="grid" id="laptopContainer"></div>
+<div class="view-btn">
+<a href="#" class="btn">View All</a>
 </div>
 </section>
 
 <!-- 🎧 Accessories -->
 <section class="section">
 <h2>🎧 Accessories</h2>
-<div class="grid">
-
-<div class="card">
-<img src="https://via.placeholder.com/200">
-<h3>Boat Headphones</h3>
-<p class="price">₹1,999</p>
-<p>🔊 Music</p>
-<a href="#" class="btn">Check Price</a>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/200">
-<h3>Noise Smartwatch</h3>
-<p class="price">₹2,499</p>
-<p>⌚ Fitness</p>
-<a href="#" class="btn">Check Price</a>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/200">
-<h3>Fast Charger 65W</h3>
-<p class="price">₹999</p>
-<p>⚡ Fast Charging</p>
-<a href="#" class="btn">Check Price</a>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/200">
-<h3>Wireless Earbuds</h3>
-<p class="price">₹1,499</p>
-<p>🎶 Daily Use</p>
-<a href="#" class="btn">Check Price</a>
-</div>
-
+<div class="grid" id="accessoriesContainer"></div>
+<div class="view-btn">
+<a href="#" class="btn">View All</a>
 </div>
 </section>
 
-<!-- ⚔️ Comparison -->
-<section class="section">
-<h2>📊 Compare Gadgets</h2>
-<table border="1" width="100%" cellpadding="10">
-<tr>
-<th>Feature</th>
-<th>iPhone 15</th>
-<th>Samsung S24</th>
-</tr>
-<tr>
-<td>Camera</td>
-<td>48MP</td>
-<td>50MP</td>
-</tr>
-<tr>
-<td>Battery</td>
-<td>3500mAh</td>
-<td>4000mAh</td>
-</tr>
-</table>
-</section>
+<script>
 
-<!-- 📝 Blogs -->
-<section class="section">
-<h2>📝 Latest Guides</h2>
-<div class="grid">
+// 📱 Mobiles
+const mobiles = [
+{name:"iPhone 15",price:"₹79,999",tag:"Camera"},
+{name:"Samsung S24",price:"₹69,999",tag:"Performance"},
+{name:"OnePlus 12",price:"₹64,999",tag:"Gaming"},
+{name:"Redmi Note 13",price:"₹24,999",tag:"Budget"},
+{name:"iQOO Neo",price:"₹35,999",tag:"Gaming"}
+];
 
+// 💻 Laptops
+const laptops = [
+{name:"HP Pavilion",price:"₹55,000",tag:"Students"},
+{name:"Dell Inspiron",price:"₹60,000",tag:"Office"},
+{name:"MacBook Air",price:"₹99,000",tag:"Premium"},
+{name:"ASUS TUF",price:"₹75,000",tag:"Gaming"}
+];
+
+// 🎧 Accessories
+const accessories = [
+{name:"Headphones",price:"₹1,999",tag:"Music"},
+{name:"Smartwatch",price:"₹2,499",tag:"Fitness"},
+{name:"Fast Charger",price:"₹999",tag:"Fast"},
+{name:"Earbuds",price:"₹1,499",tag:"Daily"},
+{name:"Power Bank",price:"₹1,299",tag:"Travel"}
+];
+
+// 🔥 Create Cards
+function createCards(data, id) {
+let container = document.getElementById(id);
+container.innerHTML = "";
+
+data.slice(0,4).forEach(item=>{
+container.innerHTML += `
 <div class="card">
-<h3>Best Phones Under 20K</h3>
-<p>Top budget picks</p>
-<a href="#" class="btn">Read More</a>
+<img src="https://via.placeholder.com/200">
+<h3>${item.name}</h3>
+<p class="price">${item.price}</p>
+<p>👤 ${item.tag}</p>
+<a href="#" class="btn">Check Price</a>
 </div>
+`;
+});
+}
 
-<div class="card">
-<h3>Best Laptops Under 50K</h3>
-<p>Performance laptops</p>
-<a href="#" class="btn">Read More</a>
-</div>
+// Render
+createCards(mobiles,"mobileContainer");
+createCards(laptops,"laptopContainer");
+createCards(accessories,"accessoriesContainer");
 
-</div>
-</section>
-
-<footer>
-<p>© 2026 GadgetSphere | Affiliate Site</p>
-</footer>
+</script>
 
 </body>
-    </html>
+</html>
