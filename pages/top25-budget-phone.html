@@ -129,17 +129,15 @@ const phones = [
 document.write(
 phones.map(phone => `
 <div class="card">
-
 <img src="${phone.image}" alt="${phone.name}">
-
 <h3>${phone.name}</h3>
-
 <p>6.5" Display | 5000mAh Battery | 50MP Camera</p>
-
 <p class="price">${phone.price}</p>
 
-<a class="btn" href="https://www.amazon.in/dp/${phone.id}?tag=${tag}" target="_blank">
-🔥 Check Price on Amazon
+<a class="btn" 
+href="https://www.amazon.in/s?k=${encodeURIComponent(phone.name)}&tag=${tag}" 
+target="_blank">
+Buy on Amazon
 </a>
 
 </div>
