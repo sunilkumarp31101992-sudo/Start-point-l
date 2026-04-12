@@ -97,49 +97,47 @@ Whether you need a phone for gaming, daily use, or photography, this list will h
 const tag = "gadgetsph019-21";
 
 const phones = [
-{name:"Redmi 13C", price:"₹10,999", image:"https://via.placeholder.com/150?text=Redmi+13C"},
-{name:"Realme Narzo N55", price:"₹11,499", image:"https://via.placeholder.com/150?text=Narzo+N55"},
-{name:"Samsung Galaxy M14 5G", price:"₹12,990", image:"https://via.placeholder.com/150?text=Samsung+M14"},
-{name:"iQOO Z6 Lite 5G", price:"₹13,499", image:"https://via.placeholder.com/150?text=iQOO+Z6"},
-{name:"Poco M6 5G", price:"₹10,499", image:"https://via.placeholder.com/150?text=Poco+M6"},
-{name:"Motorola G54 5G", price:"₹14,999", image:"https://via.placeholder.com/150?text=Moto+G54"},
-{name:"Vivo T1x", price:"₹11,999", image:"https://via.placeholder.com/150?text=Vivo+T1x"},
-{name:"Infinix Zero 5G", price:"₹12,499", image:"https://via.placeholder.com/150?text=Infinix+Zero"},
-{name:"Tecno Pova 5", price:"₹11,799", image:"https://via.placeholder.com/150?text=Tecno+Pova"},
-{name:"Lava Blaze 5G", price:"₹10,899", image:"https://via.placeholder.com/150?text=Lava+Blaze"},
+{name:"Redmi 13C", price:"₹10,999"},
+{name:"Realme Narzo N55", price:"₹11,499"},
+{name:"Samsung Galaxy M14 5G", price:"₹12,990"},
+{name:"iQOO Z6 Lite 5G", price:"₹13,499"},
+{name:"Poco M6 5G", price:"₹10,499"},
+{name:"Motorola G54 5G", price:"₹14,999"},
+{name:"Vivo T1x", price:"₹11,999"},
+{name:"Infinix Zero 5G", price:"₹12,499"},
+{name:"Tecno Pova 5", price:"₹11,799"},
+{name:"Lava Blaze 5G", price:"₹10,899"},
 
-{name:"Realme C55", price:"₹12,999", image:"https://via.placeholder.com/150?text=Realme+C55"},
-{name:"Redmi Note 12 5G", price:"₹14,499", image:"https://via.placeholder.com/150?text=Note+12"},
-{name:"Samsung Galaxy F14 5G", price:"₹13,999", image:"https://via.placeholder.com/150?text=Samsung+F14"},
-{name:"iQOO Z7 5G", price:"₹14,999", image:"https://via.placeholder.com/150?text=iQOO+Z7"},
-{name:"Poco X5 5G", price:"₹14,499", image:"https://via.placeholder.com/150?text=Poco+X5"},
-{name:"Motorola G73 5G", price:"₹14,999", image:"https://via.placeholder.com/150?text=Moto+G73"},
-{name:"Vivo Y27", price:"₹13,499", image:"https://via.placeholder.com/150?text=Vivo+Y27"},
-{name:"Infinix Note 30", price:"₹12,999", image:"https://via.placeholder.com/150?text=Note+30"},
-{name:"Realme Narzo 60 5G", price:"₹14,499", image:"https://via.placeholder.com/150?text=Narzo+60"},
-{name:"Redmi 12 5G", price:"₹11,499", image:"https://via.placeholder.com/150?text=Redmi+12"},
+{name:"Realme C55", price:"₹12,999"},
+{name:"Redmi Note 12 5G", price:"₹14,499"},
+{name:"Samsung Galaxy F14 5G", price:"₹13,999"},
+{name:"iQOO Z7 5G", price:"₹14,999"},
+{name:"Poco X5 5G", price:"₹14,499"},
+{name:"Motorola G73 5G", price:"₹14,999"},
+{name:"Vivo Y27", price:"₹13,499"},
+{name:"Infinix Note 30", price:"₹12,999"},
+{name:"Realme Narzo 60 5G", price:"₹14,499"},
+{name:"Redmi 12 5G", price:"₹11,499"},
 
-{name:"Samsung Galaxy M34 5G", price:"₹14,999", image:"https://via.placeholder.com/150?text=Samsung+M34"},
-{name:"iQOO Z9 5G", price:"₹14,499", image:"https://via.placeholder.com/150?text=iQOO+Z9"},
-{name:"Poco M5", price:"₹10,999", image:"https://via.placeholder.com/150?text=Poco+M5"},
-{name:"Motorola G34 5G", price:"₹12,999", image:"https://via.placeholder.com/150?text=Moto+G34"},
-{name:"Lava Agni 2 Lite", price:"₹14,999", image:"https://via.placeholder.com/150?text=Lava+Agni"}
+{name:"Samsung Galaxy M34 5G", price:"₹14,999"},
+{name:"iQOO Z9 5G", price:"₹14,499"},
+{name:"Poco M5", price:"₹10,999"},
+{name:"Motorola G34 5G", price:"₹12,999"},
+{name:"Lava Agni 2 Lite", price:"₹14,999"}
 ];
 
 document.write(
 phones.map(phone => `
 <div class="card">
 
-<img src="${phone.image}" alt="${phone.name}">
+<img src="https://dummyimage.com/150x200/cccccc/000000&text=Phone" alt="${phone.name}">
 
 <h3>${phone.name}</h3>
-
-<p>6.5" Display | 5000mAh Battery | 50MP Camera</p>
 
 <p class="price">${phone.price}</p>
 
 <a class="btn" 
-href="https://www.amazon.in/s?k=${encodeURIComponent(phone.name + ' 5G smartphone')}&tag=${tag}" 
+href="https://www.amazon.in/?tag=${tag}" 
 target="_blank">
 🔥 Check Price on Amazon
 </a>
@@ -148,8 +146,7 @@ target="_blank">
 `).join("")
 );
 
- </script>
-
+    </script>
 
 <!-- PHONE TEMPLATE END -->
 
