@@ -8,54 +8,68 @@
 body {
     margin:0;
     font-family: Arial;
-    background:#0f172a;
+    background:#0b1220;
     color:white;
 }
 
+/* HEADER */
 header {
-    display:flex;
-    justify-content:space-between;
-    padding:15px 20px;
+    padding:15px;
     background:#020617;
 }
 
 .logo {
     color:#00d4ff;
     font-weight:bold;
-    font-size:20px;
 }
 
+/* HERO */
 .hero {
     text-align:center;
     padding:60px 20px;
-    background:linear-gradient(135deg,#020617,#0f172a);
+}
+
+.hero h1 {
+    font-size:28px;
+    line-height:1.4;
 }
 
 .btn {
-    background:#00d4ff;
-    color:black;
     padding:10px 15px;
+    border-radius:6px;
     text-decoration:none;
-    border-radius:5px;
     display:inline-block;
-    margin-top:10px;
+    margin:8px;
+    font-size:14px;
 }
 
+.primary {
+    background:#2563eb;
+    color:white;
+}
+
+.outline {
+    border:1px solid #334155;
+    color:white;
+}
+
+/* SECTION */
 .section {
     padding:20px;
 }
 
 .grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
     gap:15px;
 }
 
+/* CARD */
 .card {
-    background:#1e293b;
-    padding:12px;
+    background:#111827;
+    padding:15px;
     border-radius:12px;
-    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    text-align:center;
     transition:0.3s;
 }
 
@@ -63,17 +77,23 @@ header {
     transform:translateY(-5px);
 }
 
-.card img {
-    width:100%;
-}
-
 .price {
     color:#00ff99;
 }
 
-.view-btn {
+/* GUIDE CARD */
+.guide-card {
+    background:#111827;
+    padding:20px;
+    border-radius:12px;
     text-align:center;
-    margin-top:15px;
+    cursor:pointer;
+}
+
+/* RESULT TITLE */
+.result-title {
+    padding:20px;
+    font-size:18px;
 }
 </style>
 
@@ -85,89 +105,99 @@ header {
 <div class="logo">GadgetSphere</div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-<h1>🔥 Find Best Gadgets</h1>
-<p>Compare • Review • Buy Smart</p>
-<a href="#" class="btn">Explore</a>
+<h1>Find the Perfect Gadget for You</h1>
+<p>Choose your need — we’ll show best options</p>
+
+<a href="#" class="btn primary">Explore</a>
+<a href="#" class="btn outline">Compare</a>
 </section>
 
-<!-- 📱 Mobiles -->
+<!-- 🔥 USER DECISION -->
 <section class="section">
-<h2>📱 Mobiles</h2>
+<h2>👉 What do you need?</h2>
+
+<div class="grid">
+
+<div class="guide-card" onclick="filterData('Gaming')">
+<h3>🎮 Gaming</h3>
+<p>High performance</p>
+</div>
+
+<div class="guide-card" onclick="filterData('Camera')">
+<h3>📸 Camera</h3>
+<p>Best photos</p>
+</div>
+
+<div class="guide-card" onclick="filterData('Battery')">
+<h3>🔋 Battery</h3>
+<p>Long backup</p>
+</div>
+
+<div class="guide-card" onclick="filterData('Premium')">
+<h3>💎 Premium</h3>
+<p>Flagship phones</p>
+</div>
+
+<div class="guide-card" onclick="filterData('Budget')">
+<h3>💰 Budget</h3>
+<p>Under ₹20K</p>
+</div>
+
+</div>
+</section>
+
+<!-- RESULT -->
+<div class="result-title" id="resultTitle">
+🔥 Top Picks
+</div>
+
+<section class="section">
 <div class="grid" id="mobileContainer"></div>
-<div class="view-btn">
-<a href="#" class="btn">View All</a>
-</div>
-</section>
-
-<!-- 💻 Laptops -->
-<section class="section">
-<h2>💻 Laptops</h2>
-<div class="grid" id="laptopContainer"></div>
-<div class="view-btn">
-<a href="#" class="btn">View All</a>
-</div>
-</section>
-
-<!-- 🎧 Accessories -->
-<section class="section">
-<h2>🎧 Accessories</h2>
-<div class="grid" id="accessoriesContainer"></div>
-<div class="view-btn">
-<a href="#" class="btn">View All</a>
-</div>
 </section>
 
 <script>
 
-// 📱 Mobiles
+// DATA
 const mobiles = [
-{name:"iPhone 15",price:"₹79,999",tag:"Camera"},
-{name:"Samsung S24",price:"₹69,999",tag:"Performance"},
+{name:"iPhone 15",price:"₹79,999",tag:"Premium"},
+{name:"Samsung S24",price:"₹69,999",tag:"Camera"},
 {name:"OnePlus 12",price:"₹64,999",tag:"Gaming"},
 {name:"Redmi Note 13",price:"₹24,999",tag:"Budget"},
+{name:"Moto G Power",price:"₹18,999",tag:"Battery"},
 {name:"iQOO Neo",price:"₹35,999",tag:"Gaming"}
 ];
 
-// 💻 Laptops
-const laptops = [
-{name:"HP Pavilion",price:"₹55,000",tag:"Students"},
-{name:"Dell Inspiron",price:"₹60,000",tag:"Office"},
-{name:"MacBook Air",price:"₹99,000",tag:"Premium"},
-{name:"ASUS TUF",price:"₹75,000",tag:"Gaming"}
-];
-
-// 🎧 Accessories
-const accessories = [
-{name:"Headphones",price:"₹1,999",tag:"Music"},
-{name:"Smartwatch",price:"₹2,499",tag:"Fitness"},
-{name:"Fast Charger",price:"₹999",tag:"Fast"},
-{name:"Earbuds",price:"₹1,499",tag:"Daily"},
-{name:"Power Bank",price:"₹1,299",tag:"Travel"}
-];
-
-// 🔥 Create Cards
-function createCards(data, id) {
-let container = document.getElementById(id);
+// CREATE CARDS
+function createCards(data) {
+let container = document.getElementById("mobileContainer");
 container.innerHTML = "";
 
-data.slice(0,4).forEach(item=>{
+data.forEach(item=>{
 container.innerHTML += `
 <div class="card">
-<img src="https://via.placeholder.com/200">
 <h3>${item.name}</h3>
 <p class="price">${item.price}</p>
 <p>👤 ${item.tag}</p>
-<a href="#" class="btn">Check Price</a>
+<a href="#" class="btn primary">Check Price</a>
 </div>
 `;
 });
 }
 
-// Render
-createCards(mobiles,"mobileContainer");
-createCards(laptops,"laptopContainer");
-createCards(accessories,"accessoriesContainer");
+// FILTER
+function filterData(type) {
+let filtered = mobiles.filter(p=>p.tag===type);
+
+document.getElementById("resultTitle").innerText =
+"🔥 Best " + type + " Phones";
+
+createCards(filtered);
+}
+
+// DEFAULT LOAD
+createCards(mobiles);
 
 </script>
 
