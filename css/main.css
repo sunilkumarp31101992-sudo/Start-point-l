@@ -1,179 +1,212 @@
-/* BASE RESET */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0b1220;
-    color: white;
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* CONTAINER */
-.container {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+body{
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(180deg, #020617, #0b1220);
+  color:white;
 }
 
-/* BUTTON */
-.btn {
-    display: block;
-    width: 100%;
-    padding: 18px;
-    font-size: 18px;
-    font-weight: bold;
-    background: #2563eb;
-    color: white;
-    border-radius: 12px;
-    text-align: center;
-}
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at top, #1e3a8a, #0b1220 60%);
-    color: white;
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 20px;
+  background: rgba(2,6,23,0.8);
+  backdrop-filter: blur(10px);
+  position:sticky;
+  top:0;
+  z-index:100;
 }
 
-.container {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+.logo{
+  color:#38bdf8;
+  font-size:18px;
+  font-weight:700;
 }
 
-.brand {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
+/* HERO BANNER (E-COMMERCE) */
+.ecom-hero{
+  padding:20px;
+  margin:15px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+.ecom-hero h2{
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.ecom-hero p{
+  font-size:13px;
+  color:#94a3b8;
+}
+
+.ecom-btn{
+  display:inline-block;
+  margin-top:10px;
+  color:#38bdf8;
+  text-decoration:none;
+  font-size:13px;
 }
 
 /* HERO */
-.hero {
-    background: linear-gradient(145deg, #0f172a, #1e293b);
-    padding: 30px 20px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
+.hero{
+  padding:30px 20px;
 }
 
-.hero p {
-    color: #94a3b8;
+.hero h1{
+  font-size:24px;
+  margin-bottom:8px;
 }
 
-/* BUTTON */
-.btn {
-    display: block;
-    width: 100%;
-    padding: 14px;
-    background: linear-gradient(45deg, #2563eb, #3b82f6);
-    border-radius: 14px;
-    margin-top: 15px;
-    color: white;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0 10px 25px rgba(59,130,246,0.5);
+.hero p{
+  color:#94a3b8;
+  font-size:14px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 16px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
 }
 
 /* SECTION */
-.section {
-    margin-top: 40px;
+.section{
+  padding:20px;
 }
 
-/* FEATURE BOX */
-.highlight {
-    background: linear-gradient(145deg, #0f172a, #1e293b);
-    padding: 25px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+.section h2{
+  margin-bottom:14px;
+  font-size:18px;
 }
 
 /* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+/* GUIDE BOX */
+.guide{
+  background: linear-gradient(145deg, #111827, #0f172a);
+  padding:16px;
+  border-radius:12px;
+  text-align:center;
+  transition:0.3s;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.guide:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.guide h3{
+  font-size:14px;
+  margin-bottom:4px;
+}
+
+.guide p{
+  font-size:12px;
+  color:#94a3b8;
+}
+
+/* PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
 }
 
 /* CARD */
-.card {
-    background: linear-gradient(145deg, #111827, #0b1220);
-    border-radius: 18px;
-    padding: 20px;
-    box-shadow: 
-        0 10px 30px rgba(0,0,0,0.6),
-        inset 0 0 20px rgba(255,255,255,0.02);
-    text-decoration: none;
-    color: white;
+.card{
+  background: linear-gradient(145deg, #111827, #0b1220);
+  padding:14px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.05);
+  transition:0.3s;
 }
 
-/* ACCESSORIES */
-.accessories {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
-.acc-btn {
-    background: #1f2937;
-    padding: 12px;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 13px;
-    color: #cbd5e1;
+.card h4{
+  font-size:14px;
+  margin-bottom:4px;
 }
 
-.acc-btn.active {
-    background: #f59e0b;
-    color: black;
-    font-weight: bold;
+.card p{
+  font-size:12px;
+  color:#94a3b8;
 }
 
-/* FOOTER */
-.footer {
-    text-align: center;
-    font-size: 12px;
-    color: #777;
-    margin-top: 30px;
-    }
-.ecom-banner {
-  background: linear-gradient(135deg, #111827, #1f2937);
-  padding: 24px;
-  border-radius: 16px;
-  margin: 24px 0;
-  text-align: center;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  transition: 0.3s ease;
+/* PRICE */
+.price{
+  color:#22c55e;
+  font-weight:600;
+  margin-top:4px;
 }
 
-.ecom-banner:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+/* BUTTON SMALL */
+.btn-small{
+  display:inline-block;
+  margin-top:8px;
+  padding:6px 10px;
+  background:#2563eb;
+  border-radius:6px;
+  font-size:12px;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
 }
 
-.ecom-banner h3 {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 8px;
+.btn-small:hover{
+  background:#1d4ed8;
 }
 
-.ecom-banner p {
-  color: #9ca3af;
-  font-size: 14px;
-  margin-bottom: 12px;
+/* HIGHLIGHT BOX */
+.highlight-box{
+  margin:20px;
+  padding:16px;
+  border-radius:12px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  text-align:left;
 }
 
-.ecom-btn {
-  display: inline-block;
-  padding: 10px 18px;
-  background: linear-gradient(135deg, #3b82f6, #6366f1);
-  color: #fff;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+.highlight-box h3{
+  font-size:16px;
 }
 
-.ecom-btn:hover {
-  background: linear-gradient(135deg, #2563eb, #4f46e5);
-  transform: scale(1.05);
-    }
+.highlight-box p{
+  font-size:13px;
+  color:#94a3b8;
+}
+
+.highlight-box a{
+  display:inline-block;
+  margin-top:8px;
+  color:#38bdf8;
+  font-size:13px;
+  text-decoration:none;
+}
