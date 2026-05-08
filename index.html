@@ -137,7 +137,7 @@ html+=`
 <h4>${p.name}</h4>
 <p class="price">${p.price}</p>
 <p>${p.tag}</p>
-<a href="#" class="btn-small">Check Price</a>
+<a href="${p.link}" target="_blank" class="btn-small">Check Price</a>
 </div>`;
 });
 document.getElementById(id).innerHTML=html;
